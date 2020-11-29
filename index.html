@@ -14,92 +14,7 @@
 
     <div class="container">
 
-        <h1 class="title">CSS</h1>
-        <section>
-            <h2>REMEMBER:</h2>
-
-            <ul>
-                <li> The terms: <b>Tag</b> and <b>Element</b> are  used interchangeably</li>
-                <li>In HTML nested tags have a parent / child relationship.</li>
-                <li>Parent elements have children, and children elements are also parents to the tags nested within them.</li>
-            </ul>
-
-            <h2>HTML vs CSS</h2>
-
-            <ul>
-                <li>HTML: provides only the hierarchical structure of elements in your document.</li>
-                <li>CSS: layered on top of that structure to modify visual appearance of those elements.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Adding CSS to HTML</h2>
-            <ul>
-                <li>Inline CSS</li>
-                <ul><li>style attribute</li></ul>
-                <li>Internal CSS</li>
-                <ul><li>style tag</li></ul>
-                <li>External CSS</li>
-                <ul><li>link tag</li></ul>
-            </ul>
-        </section>
-        <section>
-            <h2>CSS Declerations</h2>
-            <ul>
-                <li><code>property: value;</code><br></li>
-                <ul><li><code>color: red;</code></li></ul>
-            </ul>
-                
-            
-            
-            <h2>CSS Selectors</h2>
-            <ul>
-                <li>
-                    <code>element{...}</code><br>
-                    <ul><li><code>p{...} h1{...}</code></li></ul>
-                </li>
-                <br>
-                <li>
-                    <code>.class{...}</code><br>
-                    <ul><li><code>.card{...}</code></li></ul>
-                </li>
-                <br>
-                <li>
-                    <code>#id{...}</code>
-                    <ul><li><code>#main-section{...}</code></li></ul>
-                </li>
-                <br>
-                <li>
-                    <code>[attribute='value']{...}</code>
-                    <ul><li><code>[type:"password"]{...}</code></li></ul>
-                </li>
-
-            </ul>
-
-            <h2>CSS Rules</h2>
-            <ul>
-                <li>
-                    <code>seletor{set of declerations}</code>
-                    <pre><br>
-                        h1{
-                            color:grey; 
-                            font-weight:bold;
-                            text-decoration: underline;
-                        }
-                    </pre>
-                    <pre><br> 
-                        .card{
-                            background :lightgrey; 
-                            border-color: black;
-                            font-size:5px;
-                        }
-                    </pre>
-                </li>
-                
-
-            </ul>
-            
-
-        </section>
+       
 
         <h1 class="title">CSS colors</h1>
         <section>
@@ -147,8 +62,49 @@
             <p>
                 Represented by <br>
                 <b>#</b> followed by <b>6 digits</b>, combined of 16 hexadecimal numbers: <br>
-                1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+                0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
             </p>
+            <p class=color style="--color:#FF69AC;"> #FF69AC</p><br><br>
+            <h4 class="title left">Hex code of predefined colors </h4>
+            <div class=grid>
+                <div class="color" style="--color: black;">black</div><div class="color" style="--color: #000000;">#000000</div>
+                <div class="color" style="--color: white;">white</div><div class="color" style="--color: #ffffff;">#FFFFFF</div>
+                <div class="color" style="--color: red;">red</div><div class="color" style="--color: #ff0000;">#FF0000</div>
+                <div class="color" style="--color: green;">green</div><div class="color" style="--color: #008000;">#008000</div>
+                <div class="color" style="--color: blue;">blue</div><div class="color" style="--color: #0000ff;">#0000FF</div>
+                <div class="color" style="--color: yellow;">yellow</div><div class="color" style="--color: #ffff00;">#FFFF00</div>
+            </div><br><br>
+            <h4 class="title left">How Hex colors generated? </h4>
+
+            <p>Decimal equivalent of hexadecimal numbers: </p>
+            <div class="hex-dec">
+                <div>0</div><div>1</div> <div>2</div><div>3</div><div>4</div><div>5</div> <div>6</div><div>7</div><div>8</div><div>9</div> <div>A</div><div>B</div><div>C</div><div>D</div> <div>E</div><div>F</div>
+                <div>0</div><div>1</div> <div>2</div><div>3</div><div>4</div><div>5</div> <div>6</div><div>7</div><div>8</div><div>9</div> <div>10</div><div>11</div><div>12</div><div>13</div> <div>14</div><div>15</div>
+                
+            </div>
+            <p>
+                Each 2 digits 00 - FF (00 - 255) represent: 
+
+                <div style="display: grid; grid-template-columns: 1fr repeat(3,3fr); width:450px ">
+                    <div>#</div><div>00</div><div>00</div><div>00</div>
+                    <div></div><div>RED</div><div>GREEN</div><div>BLUE</div>
+                </div>
+
+            </p>
+            <p>
+                if RED is set to FF <br>GREEN is set to 00 <br> BLUE is set to 00 <br>
+                Hexadecimal code will generate: <span class="color" style="--color: #ff0000;">#FF0000</span>
+            </p>
+            
+            <div class="hex-table">
+                <div>RED</div><div>GREEN</div><div>BLUE</div><span></span>
+                <div>FF</div><div>00</div><div>00</div><span class="color" style="--color: #ff0000;"></span>
+                <div>00</div><div>FF</div><div>00</div><span class="color" style="--color: #00ff00;"></span>
+                <div>00</div><div>00</div><div>FF</div><span class="color" style="--color: #0000ff;"></span>
+                <div>FF</div><div>FF</div><div>FF</div><span class="color" style="--color: #ffffff;"></span>
+                <div>00</div><div>00</div><div>00</div><span class="color" style="--color: #000000;"></span>
+                <div>F0</div><div>F0</div><div>F0</div><span class="color" style="--color: #f0f0f0;"></span>
+            </div>
 
         </section>
         <section>
