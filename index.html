@@ -133,16 +133,56 @@
                 <div class="color" style="--color: rgb(0, 255, 0);">rgb(0, 255, 0)</div><div class="color" style="--color: rgb(0%, 100%, 0%);">rgb(0%, 100%, 0%)</div>
                 <div class="color" style="--color: rgb(0, 0, 255);">rgb(0, 0, 255)</div><div class="color" style="--color: rgb(0%, 0%, 100%);">rgb(0%, 0%, 100%)</div>
                 
-                <div class="color" style="--color: #000000;">#000000</div><div class="color" style="--color: #000;">#000</div>
-                <div class="color" style="--color: #ffffff;">#FFFFFF</div><div class="color" style="--color: #fff;">#FFF</div>
+                <div class="color" style="--color: rgb(0, 0, 0);">rgb(0, 0, 0)</div><div class="color" style="--color: rgb(0%, 0%, 0%);">rgb(0%, 0%, 0%)</div>
+                <div class="color" style="--color: rgb(255, 255, 255);">rgb(255, 255, 255)</div><div class="color" style="--color: rgb(100%, 100%, 100%);">rgb(100%, 100%, 100%)</div>
             </div>
 
             
         </section>
         <section>
             <h2>HSL colors</h2>
-            <p>RGB Colo Model: Red Green Blue</p>
-            <p>CSS function rgb(red , green , blue) accpets 3 parameters:</p>
+            <p>HSL Colo Model: Hue Saturation Lightness </p>
+            <p>CSS function hsl(hue , saturation , lightness) accpets 3 parameters:</p>
+
+            <ol>
+                <li>Hue: degree on the color wheel (0-360)</li>
+                    <ul>
+                        <li><img src="./img/hue.png" width="300"></li>
+                        <li>RED: 0 | 360</li>
+                        <li>GREEN: 120</li>
+                        <li>BLUE: 240</li>
+                    </ul>
+                <li>Saturation: how saturated or desaturated the hue is (0%-100%)</li>
+                    <ul>
+                        <li>100% is the full color (full saturation)</li>
+                        <li>0% is a shade of gray (completey desaturated)</li>
+                    </ul>
+                <li>Lightness: the brightness of the hue (0%-100%) </li>
+                    <ul>
+                        <li>0% is black</li>
+                        <li>50% is normal</li>
+                        <li>100% is white</li>
+                    </ul>
+                </ol>
+                <br>
+                <ul>
+                    <li>Fully saturated red, with normal brightness:</li>
+<ul>                    <li><div class="color" style="--color: hsl(360, 100%, 50%);">hsl(0, 100%, 50%) | hsl(360, 100%, 50%)</div></li>
+</li></ul>
+                    <li>Fully saturated green, with normal brightness:</li>
+<ul>                   <li><div class="color" style="--color: hsl(120, 100%, 50%);">hsl(120, 100%, 50%)</div></li>
+</ul>
+                    <li>Fully saturated blue, with normal brightness:</li>
+<ul>                    <li><div class="color" style="--color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</div></li>
+</ul>
+                    <li>Any hue color, any saturation value with full brightness: (white)</li>
+<ul>                    <li><div class="color" style="--color: hsl(454, 0%, 100%);">hsl([0-360], [0-100%], 100%)</div></li>
+</ul>                    <li>Any hue color, any saturation value with 0 brightness:</li>
+<ul>                    <li><div class="color" style="--color: hsl(454, 10%, 0%);">hsl([0-360], [0-100%], 0%)</div></li>
+</ul>
+
+                </ul>
+            
         </section>
          <h1 class="title">Color Transperency</h1>
         <section>
