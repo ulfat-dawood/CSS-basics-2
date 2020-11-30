@@ -196,26 +196,28 @@ ul li ul{
 	border-radius: 2rem;
 	height: 48px;
 	height: 3rem;
-	text-align: right;
+	text-align: center;
 	padding: 5.28px 16px;
 	padding: .33rem 1rem;
 	width: 100%;
+	box-shadow: 0 0 5px 5px #f0f0f0;
   }
   #sample div {
-	cursor: pointer;
 	font-size: 12px;
-	font-size: .75rem;
-	font-weight: 100;
-	line-height: 1.5em;
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 1em;
   }
-  #sample div:hover {
-	text-decoration: underline;
-  }
+ 
+  
   #sample .white {
 	color: white;
   }
   #sample .black {
 	color: black;
+  }
+  #sample .black:nth-child(2),#sample .white:nth-child(2)  {
+	  display:none; 
   }
   
   #hsl-h {
